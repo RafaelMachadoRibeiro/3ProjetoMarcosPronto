@@ -97,7 +97,28 @@ public class TerceiroProjetoMarcosFinal {
                matrizP = numero8();
             }else if(letra[i]=='9'){
                matrizP = numero9();
-            }else{
+            }else if(letra[i]=='+'){
+               matrizP = simbolomais();
+            }else if(letra[i]=='-'){
+               matrizP = simbolotracinho();
+            }else if(letra[i]=='*'){
+               matrizP = simbolovezes();
+            }else if(letra[i]=='/'){
+               matrizP = simbolodiv();
+            }else if(letra[i]=='='){
+               matrizP = simboloigual();
+            }else if(letra[i]==':'){
+               matrizP = simbolodpts();
+            }else if(letra[i]=='.'){
+               matrizP = simboloponto();
+            }else if(letra[i]==','){
+               matrizP = simbolovirgula();
+            }else if(letra[i]=='!'){
+               matrizP = simboloexclamacao();
+            }else if(letra[i]=='?'){
+               matrizP = simbolointerrogacao();
+            }
+            else{
                 matrizP = letraEs();
             }
 
@@ -407,5 +428,85 @@ public class TerceiroProjetoMarcosFinal {
                            {' ',' ',' ',' ',' ','X',' '},
                            {' ',' ',' ',' ',' ','X',' '}};
         return numero9;
+    }
+    public static char[][] simbolomais(){
+        char[][]simbolomais = {{' ',' ',' ','X',' ',' ',' '},
+                               {' ',' ',' ','X',' ',' ',' '},
+                               {'X','X','X','X','X','X','X'},
+                               {' ',' ',' ','X',' ',' ',' '},
+                               {' ',' ',' ','X',' ',' ',' '}}; 
+        return simbolomais;
+    }
+    public static char[][] simbolotracinho(){
+        char[][]simbolotracinho = {{' ',' ',' ',' ',' ',' ',' '},
+                                   {' ',' ',' ',' ',' ',' ',' '},
+                                   {' ','X','X','X','X','X',' '},
+                                   {' ',' ',' ',' ',' ',' ',' '},
+                                   {' ',' ',' ',' ',' ',' ',' '}}; 
+        return simbolotracinho;
+    }
+    public static char[][] simbolovezes(){
+        char[][]simbolovezes = {{' ','X',' ',' ',' ','X',' '},
+                                {' ',' ','X',' ','X',' ',' '},
+                                {' ',' ',' ','X',' ',' ',' '},
+                                {' ',' ','X',' ','X',' ',' '},
+                                {' ','X',' ',' ',' ','X',' '}}; 
+        return simbolovezes;
+    }
+    public static char[][] simbolodiv(){
+        char[][]simbolodiv = {{' ',' ',' ',' ',' ','X',' '},
+                              {' ',' ',' ',' ','X',' ',' '},
+                              {' ',' ',' ','X',' ',' ',' '},
+                              {' ',' ','X',' ',' ',' ',' '},
+                              {' ','X',' ',' ',' ',' ',' '}}; 
+        return simbolodiv;
+    }
+    public static char[][] simboloigual(){
+        char[][]simboloigual = {{' ',' ',' ',' ',' ',' ',' '},
+                                {' ','X','X','X','X','X',' '},
+                                {' ',' ',' ',' ',' ',' ',' '},
+                                {' ','X','X','X','X','X',' '},
+                                {' ',' ',' ',' ',' ',' ',' '}}; 
+        return simboloigual;
+    }
+    public static char[][] simbolodpts(){
+        char[][] simbolodpts = {{' ','X','X',' ',' ',' ',' '},
+                                {' ','X','X',' ',' ',' ',' '},
+                                {' ',' ',' ',' ',' ',' ',' '},
+                                {' ','X','X',' ',' ',' ',' '},
+                                {' ','X','X',' ',' ',' ',' '}}; 
+        return simbolodpts;
+    }
+    public static char[][] simboloponto(){
+        char[][] simboloponto = {{' ',' ',' ',' ',' ',' ',' '},
+                                 {' ',' ',' ',' ',' ',' ',' '},
+                                 {' ',' ',' ',' ',' ',' ',' '},
+                                 {' ','X','X',' ',' ',' ',' '},
+                                 {' ','X','X',' ',' ',' ',' '}}; 
+        return simboloponto;
+    }
+    public static char[][] simbolovirgula(){
+        char[][] simbolovirgula = {{' ',' ',' ',' ',' ',' ',' '},
+                                   {' ',' ',' ',' ',' ',' ',' '},
+                                   {' ',' ','X',' ',' ',' ',' '},
+                                   {' ',' ','X',' ',' ',' ',' '},
+                                   {' ','X',' ',' ',' ',' ',' '}}; 
+        return simbolovirgula;
+    }
+    public static char[][] simboloexclamacao(){
+        char[][] simboloexclamacao = {{' ','X',' ',' ',' ',' ',' '},
+                                      {' ','X',' ',' ',' ',' ',' '},
+                                      {' ','X',' ',' ',' ',' ',' '},
+                                      {' ',' ',' ',' ',' ',' ',' '},
+                                      {' ','X',' ',' ',' ',' ',' '}}; 
+        return simboloexclamacao;
+    }
+    public static char[][] simbolointerrogacao(){
+        char[][] simbolointerrogacao = {{' ',' ','X','X',' ',' ',' '},
+                                      {' ','X',' ',' ','X',' ',' '},
+                                      {' ',' ',' ','X',' ',' ',' '},
+                                      {' ',' ','X',' ',' ',' ',' '},
+                                      {' ','X',' ',' ',' ',' ',' '}}; 
+        return simbolointerrogacao;
     }
 }
